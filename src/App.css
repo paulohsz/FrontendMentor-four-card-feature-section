@@ -7,11 +7,11 @@
   --Grayish-Blue: hsl(229, 6%, 66%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
 }
-body #root {
+body {
   font-family:  'Poppins', sans-serif !important;
   font-size: 15px !important;
   font-weight:  400 !important;
-  background-color: var(Very-Light-Gray) !important;
+  background-color: var(--Very-Light-Gray) !important;
 }
 #root {
   height: 100%;

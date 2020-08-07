@@ -1,22 +1,11 @@
 import React, {Component} from 'react';
-import { Container, Image, Header, Popup, Segment, Grid, GridColumn } from 'semantic-ui-react'
+import { Container, Image, Header, Segment, Grid } from 'semantic-ui-react'
 import './App.css'
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.stateInicial = {
-      footerMobile: false,
-    };
-
-    this.state = this.stateInicial;
-
-  }
   render() {
 
-    const { footerMobile } = this.state;
     return (
       <Container className='cont-main'>
 

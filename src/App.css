@@ -1,38 +1,100 @@
-.App {
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body #root {
+  font-family:  'Poppins', sans-serif !important;
+  font-size: 15px !important;
+  font-weight:  400 !important;
+  background-color: var(Very-Light-Gray) !important;
+}
+#root {
+  height: 100%;
+  display: grid;
+}
+.cont-main {
+  margin: auto;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cont-main .ui.header {
+  font-family:  'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight:  400;
+  color: var(--Very-Dark-Blue);
+}
+.cont-main h2.ui.header {
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+.cont-main h3.ui.header {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+.cont-main h4.ui.header {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--Grayish-Blue);
+  width: 445px;
+  margin: 0px auto 30px auto;
+}
+.main-grid.ui.grid>.row>.column {
+  padding: 26px;
+}
+.main-grid .ui.red.segment:not(.inverted),
+.main-grid .ui.orange.segment:not(.inverted),
+.main-grid .ui.blue.segment:not(.inverted),
+.main-grid .ui.segment  {
+  border-radius: 0.5rem;
+  box-shadow: 4px 6px 19px 3px rgba(34,36,38,.15);
+  min-height: 190px;
+  font-size: 0.85rem;
+  font-weight:  400;
+  color: var(--Grayish-Blue);
+  padding: 20px;
+  border-top-width: 4px !important;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  width: 100%;
+}
+.ui.segment.cyan {
+  border-top-color: var(--Cyan);
+}
+.main-grid.ui.grid>.row>.column>.ui.grid {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.main-grid .ui.segment h5.ui.header {
+  font-size: 1.2rem;
+  font-weight:  600;
+  color: var(--Very-Dark-Blue);
+}
+.main-grid img.ui.image {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-width: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attribution {
+  font-size: 0.8rem; 
+  text-align: center;
+  color: var(--Grayish-Blue);
+  margin-top: 14px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.attribution a { 
+  color: var(--Grayish-Blue);  
+  margin-left: 3px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.attribution a:hover { 
+  color: var(--Very-Dark-Blue);
 }

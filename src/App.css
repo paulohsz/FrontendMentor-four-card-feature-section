@@ -43,7 +43,6 @@ body {
   font-weight: 400;
   font-size: 0.9rem;
   color: var(--Grayish-Blue);
-  width: 445px;
   margin: 0px auto 30px auto;
 }
 .main-grid.ui.grid>.row>.column {
@@ -97,4 +96,14 @@ body {
 }
 .attribution a:hover { 
   color: var(--Very-Dark-Blue);
+}
+@media only screen and (max-width: 767px) {
+  .cont-main h4.ui.header {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cont-main h4.ui.header {
+    width: 445px;
+  }
 }
